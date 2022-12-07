@@ -17,9 +17,10 @@ Abstract: We present Neural Head Avatars, a novel neural representation that exp
 
 ## Installation
 
-- Install Python3.9 following the instruction on https://www.python.org/
-- ```git clone --recursive https://github.com/philgras/neural-head-avatars.git ```
+- Install Python3.8 following the instruction on https://www.python.org/
+-```git clone --recursive https://github.com/philgras/neural-head-avatars.git ```
 - ```cd neural-head-avatars```
+- ```create a virtual conda environment with python version 3.8 ```
 - ```pip install -e .```
 - Add ```generic_model.pkl``` obtained from the [MPI website](https://flame.is.tue.mpg.de/) to ```./assets/flame```.
 - Optional for training: Add the arcface model weights used for the perceptual energy term as ```backbone.pth``` to ```./assets/InsightFace```. The checkpoint can be downloaded from the [ArcFace repo](https://github.com/deepinsight/insightface/tree/c85f5399836b604611057e194a3c30230053c490/recognition/arcface_torch)
