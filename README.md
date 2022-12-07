@@ -61,8 +61,12 @@ by looking for the ms1mv3_arcface_r18_fp run. To ease the search, this is the On
     - If facing any issue checkout the other installment options from [website](https://github.com/facebookresearch/pytorch3d/blob/main/INSTALL.md)
         
 ## Project path
-    <img align="left" src="./misc/Screenshot_20221207_102520.png" width="200px">
-    <img align="right" src="./misc/Screenshot_20221207_102805.png" width="200px">
+<img  src="./misc/Screenshot_20221207_102520.png" width="250px">
+<img  src="./misc/Screenshot_20221207_102805.png" width="250px">
+<!-- <img align="left" src="./misc/Screenshot_20221207_102520.png" width="200px">
+<img align="right" src="./misc/Screenshot_20221207_102805.png" width="200px"> -->
+    
+    
     
 ## Downloadable Content
 This repository is accompanied by preprocessed training data, head tracking results and optimized avatars for two subjects. Please download the zipped files from [here](https://edmond.mpdl.mpg.de/api/access/datafile/182303). The archive contains three folders: ```data``` contains preprocessed training files, ```nha``` contains the optimized head avatars, and ```tracking``` contains head tracking results.
