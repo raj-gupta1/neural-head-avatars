@@ -18,10 +18,14 @@ Abstract: We present Neural Head Avatars, a novel neural representation that exp
 ## Installation
 
 - Install Python3.8 following the instruction on https://www.python.org/
--```git clone --recursive https://github.com/philgras/neural-head-avatars.git ```
-- ```cd neural-head-avatars```
-- ```create a virtual conda environment with python version 3.8 ```
-- ```pip install -e .```
+    
+- create a virtual conda environment with python version 3.8 using 
+    - ```conda create --name <env_name> python=3.8```
+    - ```conda activate <env_name>```
+- Clone the repository using 
+    - ```git clone --recursive https://github.com/philgras/neural-head-avatars.git ```
+    - ```cd neural-head-avatars```
+    - ```pip install -e .```
 - Add ```generic_model.pkl``` obtained from the [MPI website](https://flame.is.tue.mpg.de/) to ```./assets/flame```.
 - Optional for training: Add the arcface model weights used for the perceptual energy term as ```backbone.pth``` to ```./assets/InsightFace```. The checkpoint can be downloaded from the [ArcFace repo](https://github.com/deepinsight/insightface/tree/c85f5399836b604611057e194a3c30230053c490/recognition/arcface_torch)
 by looking for the ms1mv3_arcface_r18_fp run. To ease the search, this is the OneDrive [link](https://onedrive.live.com/?authkey=%21AFZjr283nwZHqbA&id=4A83B6B633B029CC%215578&cid=4A83B6B633B029CC) provided by their Readme. Download the ```backbone.pth``` from there.
@@ -31,7 +35,7 @@ by looking for the ms1mv3_arcface_r18_fp run. To ease the search, this is the On
     - Add ```model.pth``` obtained from [here](https://github.com/zllrunning/face-parsing.PyTorch/tree/d2e684cf1588b46145635e8fe7bcc29544e5537e) to ```./assets/face_parsing``` for facial segmentation ([direct link](https://drive.google.com/open?id=154JgKpzCPW82qINcVieuPH3fZ2e0P812)).
     - Run `pip install -e deps/video-head-tracker` to install the FLAME tracker.  Download the flame
      head model and texture space from the official [website](https://flame.is.tue.mpg.de/)
-     and add them as ```generic_model.pkl``` and ```FLAME_texture.npz``` under ```./assets/flame```.
+     and add them as ```generic_model.pkl``` from [link](https://download.is.tue.mpg.de/download.php?domain=flame&resume=1&sfile=FLAME2020.zip) and ```FLAME_texture.npz``` from [link](https://download.is.tue.mpg.de/download.php?domain=flame&resume=1&sfile=TextureSpace.zip) under ```./assets/flame```.
      Go to ```https://github.com/HavenFeng/photometric_optimization``` and copy the uv
      parametrization ```head_template_mesh.obj``` of FLAME found
      [there](https://github.com/HavenFeng/photometric_optimization/blob/master/data/head_template_mesh.obj)
