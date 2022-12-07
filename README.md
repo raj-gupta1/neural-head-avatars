@@ -15,7 +15,7 @@ Abstract: We present Neural Head Avatars, a novel neural representation that exp
 <br>
 <br>
 
-## Installation
+## Installation and Project Setup
 
 - Install Python3.8 following the instruction on https://www.python.org/
     
@@ -43,6 +43,14 @@ by looking for the ms1mv3_arcface_r18_fp run. To ease the search, this is the On
      tells you.)
 <br>
 
+## Other Necessary Installation
+-  Download cuda 11.3 from [link](https://developer.download.nvidia.com/compute/cuda/11.3.0/local_installers/cuda_11.3.0_465.89_win10.exe) and on anaconda prompt check if cuda is installed successfully using ```nvidia-smi```
+-  In the environment created 
+    - Install required version of Pytorch, Torchvision, torchaudio from [website](https://pytorch.org/get-started/previous-versions/). OR
+    - We used ```conda install pytorch==1.12.0 torchvision==0.13.0 torchaudio==0.12.0 cudatoolkit=11.3 -c pytorch```
+    - In case of any issue in above installation use [website](https://download.pytorch.org/whl/torch_stable.html) and download using '''wget <link to download pytorch,torchvsion,torchaudio>''' on anaconda prompt on created environment.  
+    
+    
 ## Downloadable Content
 This repository is accompanied by preprocessed training data, head tracking results and optimized avatars for two subjects. Please download the zipped files from [here](https://edmond.mpdl.mpg.de/api/access/datafile/182303). The archive contains three folders: ```data``` contains preprocessed training files, ```nha``` contains the optimized head avatars, and ```tracking``` contains head tracking results.
 
